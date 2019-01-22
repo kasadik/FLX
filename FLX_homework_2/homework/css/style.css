@@ -1,0 +1,231 @@
+@media print{
+
+	.tm-sidebar, #about,.heading.tm-content-box, .blocks, #ideas, .img-fluid, #contact {
+	display:none;
+	}
+    h2.tm-section-title{
+	 color: #0000FF;
+	}
+
+
+	
+section > .tm-content-box {
+display: flex;
+align-items: center;
+}
+
+
+
+.tm-team-description-container {
+flex-basis: 70rem;
+max-width: 100%;
+top:40px;
+right:-50px;
+}
+	
+
+	img[alt="epam-mexico"]{
+    left: 100px;
+	bottom: -50px;
+	width: 100%;
+}
+	
+}
+h2 + p {
+	font-style:italic;
+}
+
+p::first-letter{
+text-transform: capitalize;
+color: #87CEFA;
+font-size:30px;
+margin-left: 10%;
+}
+
+.padding-medium.flex-item.tm-team-description-container.flex-item{
+	position: relative;
+	width: 30%;
+	float:left;
+	bottom: -150px;
+
+}
+li.box.box-bg h2:hover{
+	opacity:1;
+	color: white;
+	background-color: #87CEFA;
+
+}
+
+.flex-item img{
+	position:relative;
+	float:right;
+}
+
+#home.tm-content-box.tm-content-header.margin-b-10{
+  box-shadow: 0 0 10px 5px rgba(221, 221, 221, 1);
+}
+.tm-banner {
+background-color: #f5f5f5;
+}
+.tm-banner-inner
+{
+	background-color: white;
+}
+
+.tm-banner-text{
+	width:400px;
+}
+
+.tm-content-box .box.box-work{
+padding:10px;
+}
+
+.box.box-work p::first-letter{
+text-transform: capitalize;
+font-style:italic;
+color: black;
+font-size:30px;
+margin-left: 0px;
+}
+.box.box-work:nth-child(2) {
+	background-color: #f5f5f5;
+}
+.box.box-work:nth-child(4) {
+	background-color: #f5f5f5;
+}
+.box.box-work:nth-child(6) {
+	background-color: #f5f5f5;
+}
+.tm-sidebar, .tm-content-box.flex-2-col,.tm-content-box, .heading.tm-content-box, .carousel.slide.tm-content-box, .blocks{
+box-shadow: 0 0 10px 5px rgba(221, 221, 221, 1);
+}
+
+.tm-nav-item:hover{
+	opacity:1;
+	background-color: #f5f5f5;
+}
+
+.carousel-content .flex-item .tm-section-title{
+color:gainsboro;
+letter-spacing: 5px;
+}
+
+.padding-medium li a, [href*="index.html"]{
+	color:black;
+}
+.padding-medium li a:hover{
+	text-decoration: underline;
+	color: #87CEFA;
+	border-bottom: 1px solid #87CEFA;
+}
+
+.padding-medium li a:visited{ 
+  text-decoration: underline;
+}
+.padding-medium li:nth-child(1):after{
+	position: relative;
+	top:-10px;
+	content: "New";
+	color:red;
+	font-size:10px;
+}
+
+.padding-medium li:nth-child(3):after{
+	position: relative;
+	top:-10px;
+	content: "New";
+	color:red;
+	font-size:10px;
+}
+
+.form-group.col-xs-12.col-sm-12.col-md-6.col-lg-6.form-group-2-col-right.mandatory-field:after {
+  content: "*";
+  font-weight:bold;
+  display: block;
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  color: red;
+}
+
+.btn.btn-primary.submit-btn {
+	position:relative;
+	float:right;
+	border-radius:0px;
+    background-color:white;
+	color: #87CEFA;
+	border-color: #87CEFA;
+	width:150px;
+	padding:14px 40px;
+}
+.btn.btn-primary.submit-btn:hover{
+background-color: #87CEFA;
+color:white;
+}
+
+.blocks > .tm-content-box.flex-2-col{
+	display:none;
+}
+
+section >.tm-content-box.flex-2-col:after {
+content: "";
+position: relative;
+top:-420px;
+width: 0;
+height: 0;
+border-style: solid;
+border-width: 58px 250px 0 0;
+border-color: #00c4ff transparent transparent transparent;
+display: inline-block;
+
+}
+
+section > .carousel.slide.tm-content-box:after{
+content: "";
+position: relative;
+top:-190px;
+left:-500px;
+width: 0;
+height: 0;
+border-style: solid;
+border-width: 58px 250px 0 0;
+border-color: #00c4ff transparent transparent transparent;
+display: inline-block;
+}
+
+.heading.tm-content-box > .padding-medium:after{
+content: "";
+position: relative;
+top:-270px;
+left:-100px;
+width: 0;
+height: 0;
+border-style: solid;
+border-width: 58px 250px 0 0;
+border-color: #00c4ff transparent transparent transparent;
+display: inline-block;
+}
+
+section > .padding-medium.flex-item.tm-team-description-container.flex-item{
+	float:none;
+	bottom:0px;
+	max-width:1110px;
+	width:1110px;
+	background-color:white;
+	position:relative;
+	
+}
+
+section > .padding-medium.flex-item.tm-team-description-container.flex-item:after{
+content: "";
+position: relative;
+top:-217px;
+left:-40px;
+width: 0;
+height: 0;
+border-style: solid;
+border-width: 48px 180px 0 0;
+border-color: #00c4ff transparent transparent transparent;
+display: inline-block;
+	}
+
