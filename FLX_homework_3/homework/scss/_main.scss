@@ -1,0 +1,230 @@
+
+body{
+
+    margin:0;
+    .main-wrapper{
+        @include MainBacgroundColor;
+    }
+    header{
+        @include backgroundimg;
+        background-size: cover;
+        width:100%;
+        height:1200px;
+        section{
+            display: block;
+            position: relative;
+            top: 400px;
+        }
+        h1{
+            text-align: center;
+            @include headerTextStyle;
+          }
+          .btn.btn-top{
+            width:13%;
+            margin:0 auto;
+            display:block;
+            text-align: center;
+            padding: 15px;
+            @include headerTextStyle;
+            font-size: 15px;
+            @include buttonStyle;
+        }
+     
+    }
+
+    .top-wrapper{
+        display: flex;
+        justify-content:space-between;
+        .logo{
+          width:17%;
+          img{
+              width:100%;
+          }
+        }
+        nav{
+            display: flex;
+            border-right: 5px;
+            height: 40px;
+            a{
+                padding: 10px 110px 10px 110px;
+                @include headerTextStyle;
+                border-right: 2px solid;
+                border-color: grey;
+            }
+        }
+
+        }
+    
+        main{
+            @include MainBacgroundColor;
+            margin: 15%  15%;
+            margin-top:1%;
+            margin-bottom: auto;
+           .toolbar{
+               display:flex;
+               justify-content:flex-end;
+               input{
+                @include SearchField;
+               }
+           }
+           .post-list{
+               display:flex;
+               flex-direction: column;
+            
+              h1{
+                  display: inline-flex;
+                justify-content:flex-end;
+                @include contFont;
+                
+              }
+
+              article{
+                  display: flex;
+                  margin-bottom: 25px;
+                  background-color:$backgroundList;
+                  
+                      .btn{
+                          display: block;
+                          position:relative;
+                          margin-left:80%;
+                          padding: 10px;
+                          width: 140px;
+                          @include buttonStyle;
+
+                          
+                      }
+                  
+                  img{
+                      margin-right: 10px;
+                      padding: 10px;
+                  }
+                  .post{
+                      padding: 10px;
+                      .post-description{
+                          @include descFont;
+                          
+                      }
+
+                      h3{
+                        @include contFont;
+                        color:$ColorOfListTitle;
+                        border-top: 1px solid;
+                        border-color: grey;
+                        padding: 10px 0px 0px 0px;
+                        margin-bottom: 0px;
+
+                      }
+                      p{
+                          @include listFont;
+                          margin-top:0px;
+
+                      }
+
+                    }
+
+              }
+
+
+            }
+        
+        }
+        .about{
+            display:flex;
+            flex-direction: column;
+            h1{
+                width: 100%;
+                display: inline-flex;
+                justify-content: flex-end;
+                @include contFont;
+                margin-top:0px;
+
+            }
+            img{
+              width:100%;
+            }
+            p{
+                @include listFont;
+            }
+        }
+
+        .contact-form{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            h1{
+                @include contFont;
+                margin-top:5%;
+            }
+            h4{
+                @include contFont;
+                font-size: 15px;
+            }
+            .form{
+                width: 100%;
+                .contact-us-form{
+                    .name{
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        label{
+                            width:47%;
+
+                            strong{
+                                @include contactUSTitles;
+                                &:after{
+                                    position: relative;
+                                    top: -10px;
+                                    content: "*";
+                                    color: $AsteriskColor;
+                                    font-size: 15px;
+
+                                }
+                            }
+                            #contact_name{
+                                width: 100%;
+                                padding: 10px;
+                            }
+                            #e-mail{
+                                width: 95%;
+                                padding: 10px;
+                            }
+                            #mail{
+                                margin-left: 90%;
+                            }
+                            #title{
+                                position: relative;
+                                left: 30px;
+                                width: 30%;
+                                margin-left: 85%;
+                            }
+                            
+
+                        }
+                    }
+                    .questions{
+                        .text{
+                            width: 100%;
+                        }
+                        h2{
+                            @include contactUSTitles;
+                            margin-left: 84%;
+                        }
+                    }
+                    .button{
+                        padding: 20px;
+                        margin:10px;
+                        width: 300px;
+                        @include buttonStyle;
+                        margin-left:78%;
+                    }
+
+                }
+            }
+            
+
+        }
+        footer{
+          @include FooterText;
+        }
+   
+    }

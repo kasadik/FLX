@@ -1,0 +1,73 @@
+
+@mixin headerTextStyle {
+    font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+    text-transform: uppercase;
+    font-size: 26px;
+    font-weight: bold;
+    text-decoration: none;
+    color:#ff5646;
+}
+@mixin buttonStyle{
+    color:white;
+    text-transform: uppercase;
+    border: 0px;
+    background-color: #0401ac;
+    font-weight: normal;
+}
+@mixin MainBacgroundColor {
+  background-color:#efefef;
+} 
+
+@mixin contFont {
+    font-family:Roboto;
+    text-transform: uppercase;
+    font-size: 26px;
+    font-weight: bold;
+    text-decoration: none;
+    color:#757575;
+    
+    }
+@mixin listFont{
+    font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-size: 18px;
+    font-weight: normal;
+    text-decoration: none;
+
+}
+
+@mixin descFont{
+    font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-size: 18px;
+    color: #bdbdbd;
+}
+
+
+
+@mixin contactUSTitles{
+    color:#757575;
+    font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-size: 17px;
+    text-decoration: none;
+}
+@mixin backgroundimg{
+    background: url("../img/header_background_v2.jpg") no-repeat;
+}
+
+@mixin SearchField {
+    background-color: #efefef;
+    padding: 10px;
+    border-right-color: #9a9a9a;
+    border-bottom-color: #9a9a9a;
+}
+@mixin FooterText {
+    font-weight: bold;
+    font-size: 18px;
+    font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+$backgroundList:white;
+$ColorOfListTitle:#60609c;
+$AsteriskColor:#757575;
+
+
+ 

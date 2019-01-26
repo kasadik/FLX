@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Cantarell');
+@mixin headerTextStyle {
+    font-family:Roboto;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color:white;
+}
+@mixin buttonStyle{
+    color:white;
+    text-transform: uppercase;
+    border: 0px;
+    background-color: #01acac;
+    font-weight: normal;
+}
+@mixin MainBacgroundColor {
+  // background-color: #efefef;
+  background-color: white;
+} 
+
+@mixin contFont {
+    font-family:Roboto;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    }
+@mixin listFont{
+    font-family:Cantarell;
+    font-size: 15px;
+    font-weight: normal;
+    text-decoration: none;
+
+}
+
+@mixin descFont{
+    font-family:Roboto;
+    font-size: 15px;
+    color:red;
+}
+
+
+
+@mixin contactUSTitles{
+    color:#0097a7;
+    font-family:Roboto;
+    font-size: 18px;
+    text-decoration: none;
+}
+@mixin backgroundimg{
+    background: url("../img/header_background_v1.jpg") no-repeat;
+}
+@mixin SearchField {
+    background-color: white;
+    padding: 10px;
+}
+@mixin FooterText {
+    font-weight: bold;
+    font-size: 15px;
+    font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-family:Roboto;
+}
+$backgroundList:#efefef;
+$ColorOfListTitle:#0097a7;
+$SearchFieldColor:white;
+$AsteriskColor:#0097a7;
+
+

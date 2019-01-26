@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+@import url("https://fonts.googleapis.com/css?family=Cantarell");
+body {
+  margin: 0; }
+  body .main-wrapper {
+    background-color: white; }
+  body header {
+    background: url("../img/header_background_v1.jpg") no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 1200px; }
+    body header section {
+      display: block;
+      position: relative;
+      top: 400px; }
+    body header h1 {
+      text-align: center;
+      font-family: Roboto;
+      text-transform: uppercase;
+      font-size: 24px;
+      font-weight: bold;
+      text-decoration: none;
+      color: white; }
+    body header .btn.btn-top {
+      width: 13%;
+      margin: 0 auto;
+      display: block;
+      text-align: center;
+      padding: 15px;
+      font-family: Roboto;
+      text-transform: uppercase;
+      font-size: 24px;
+      font-weight: bold;
+      text-decoration: none;
+      color: white;
+      font-size: 15px;
+      color: white;
+      text-transform: uppercase;
+      border: 0px;
+      background-color: #01acac;
+      font-weight: normal; }
+  body .top-wrapper {
+    display: flex;
+    justify-content: space-between; }
+    body .top-wrapper .logo {
+      width: 17%; }
+      body .top-wrapper .logo img {
+        width: 100%; }
+    body .top-wrapper nav {
+      display: flex;
+      border-right: 5px;
+      height: 40px; }
+      body .top-wrapper nav a {
+        padding: 10px 110px 10px 110px;
+        font-family: Roboto;
+        text-transform: uppercase;
+        font-size: 24px;
+        font-weight: bold;
+        text-decoration: none;
+        color: white;
+        border-right: 2px solid;
+        border-color: grey; }
+  body main {
+    background-color: white;
+    margin: 15%  15%;
+    margin-top: 1%;
+    margin-bottom: auto; }
+    body main .toolbar {
+      display: flex;
+      justify-content: flex-end; }
+      body main .toolbar input {
+        background-color: white;
+        padding: 10px; }
+    body main .post-list {
+      display: flex;
+      flex-direction: column; }
+      body main .post-list h1 {
+        display: inline-flex;
+        justify-content: flex-end;
+        font-family: Roboto;
+        text-transform: uppercase;
+        font-size: 24px;
+        font-weight: bold;
+        text-decoration: none;
+        color: black; }
+      body main .post-list article {
+        display: flex;
+        margin-bottom: 25px;
+        background-color: #efefef; }
+        body main .post-list article .btn {
+          display: block;
+          position: relative;
+          margin-left: 80%;
+          padding: 10px;
+          width: 140px;
+          color: white;
+          text-transform: uppercase;
+          border: 0px;
+          background-color: #01acac;
+          font-weight: normal; }
+        body main .post-list article img {
+          margin-right: 10px;
+          padding: 10px; }
+        body main .post-list article .post {
+          padding: 10px; }
+          body main .post-list article .post .post-description {
+            font-family: Roboto;
+            font-size: 15px;
+            color: red; }
+          body main .post-list article .post h3 {
+            font-family: Roboto;
+            text-transform: uppercase;
+            font-size: 24px;
+            font-weight: bold;
+            text-decoration: none;
+            color: black;
+            color: #0097a7;
+            border-top: 1px solid;
+            border-color: grey;
+            padding: 10px 0px 0px 0px;
+            margin-bottom: 0px; }
+          body main .post-list article .post p {
+            font-family: Cantarell;
+            font-size: 15px;
+            font-weight: normal;
+            text-decoration: none;
+            margin-top: 0px; }
+  body .about {
+    display: flex;
+    flex-direction: column; }
+    body .about h1 {
+      width: 100%;
+      display: inline-flex;
+      justify-content: flex-end;
+      font-family: Roboto;
+      text-transform: uppercase;
+      font-size: 24px;
+      font-weight: bold;
+      text-decoration: none;
+      color: black;
+      margin-top: 0px; }
+    body .about img {
+      width: 100%; }
+    body .about p {
+      font-family: Cantarell;
+      font-size: 15px;
+      font-weight: normal;
+      text-decoration: none; }
+  body .contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; }
+    body .contact-form h1 {
+      font-family: Roboto;
+      text-transform: uppercase;
+      font-size: 24px;
+      font-weight: bold;
+      text-decoration: none;
+      color: black;
+      margin-top: 5%; }
+    body .contact-form h4 {
+      font-family: Roboto;
+      text-transform: uppercase;
+      font-size: 24px;
+      font-weight: bold;
+      text-decoration: none;
+      color: black;
+      font-size: 15px; }
+    body .contact-form .form {
+      width: 100%; }
+      body .contact-form .form .contact-us-form .name {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between; }
+        body .contact-form .form .contact-us-form .name label {
+          width: 47%; }
+          body .contact-form .form .contact-us-form .name label strong {
+            color: #0097a7;
+            font-family: Roboto;
+            font-size: 18px;
+            text-decoration: none; }
+            body .contact-form .form .contact-us-form .name label strong:after {
+              position: relative;
+              top: -10px;
+              content: "*";
+              color: #0097a7;
+              font-size: 15px; }
+          body .contact-form .form .contact-us-form .name label #contact_name {
+            width: 100%;
+            padding: 10px; }
+          body .contact-form .form .contact-us-form .name label #e-mail {
+            width: 95%;
+            padding: 10px; }
+          body .contact-form .form .contact-us-form .name label #mail {
+            margin-left: 90%; }
+          body .contact-form .form .contact-us-form .name label #title {
+            position: relative;
+            left: 30px;
+            width: 30%;
+            margin-left: 85%; }
+      body .contact-form .form .contact-us-form .questions .text {
+        width: 100%; }
+      body .contact-form .form .contact-us-form .questions h2 {
+        color: #0097a7;
+        font-family: Roboto;
+        font-size: 18px;
+        text-decoration: none;
+        margin-left: 84%; }
+      body .contact-form .form .contact-us-form .button {
+        padding: 20px;
+        margin: 10px;
+        width: 300px;
+        color: white;
+        text-transform: uppercase;
+        border: 0px;
+        background-color: #01acac;
+        font-weight: normal;
+        margin-left: 78%; }
+  body footer {
+    font-weight: bold;
+    font-size: 15px;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-family: Roboto; }
