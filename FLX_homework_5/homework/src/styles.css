@@ -1,0 +1,302 @@
+/*
+ * Feel free to change name of colors if you need it
+ * Feel free to add new colors if you need it
+ */
+
+
+body {
+  font-family: roboto;
+  background-color: #0b192f;
+  margin:0 10%;
+}
+body header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #162b4d;
+  color: #fff;
+  padding: 0 1% 0;
+  margin-bottom: 3%;
+}
+body header span{
+  color:#aa2860;
+}
+body header h2{
+  font-weight: normal;
+}
+body header nav{
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+  padding-right: 3%;
+}
+body header nav a{
+  text-decoration: none;
+  color:#fff;
+  padding: 10% 5% 10%;
+}
+body header nav a:hover{
+  background-color:#283d5f;
+  color:#b8b8b8;
+}
+body header .humburger div{
+  width: 35px;
+  height: 5px;
+  background-color: #fff;
+  margin: 6px 0;
+}
+body header .humburger{
+  width:fit-content;
+}
+/****-main-block-***********************************************************************************************/
+main{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5%;
+  flex-wrap: wrap;
+}
+main .boxes{
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+}
+
+
+main .boxes .post:nth-child(odd){
+  display: flex;
+  flex-direction: row;
+}
+main .boxes .post:nth-child(even){
+  display: flex;
+  flex-direction: row-reverse;
+  text-align: end;
+}
+main .boxes .post:nth-child(odd) .date{
+  margin-left: 4%;
+}
+main .boxes .post:nth-child(even) .date{
+  margin-right: 4%;
+}
+main .boxes .post .text_field_post p{
+  color:#b8b8b8;
+}
+main .boxes .post .date{
+  display: flex;
+  flex-direction: column;
+  color:#b8b8b8;
+  width: fit-content;
+  padding: 1%;
+}
+main .boxes .post .date .number{
+  font-size: 30px;
+}
+main .boxes .post .date .month{
+  font-size: 18px;
+}
+#rose{
+  background-color: #B71757;
+}
+#amber{
+  background-color: #b1660e;
+}
+#emerald{
+  background-color: #0D7E71;
+}
+#rose_button{
+  background-color: #d12767;
+}
+main .boxes .post .text_field_post{
+
+  color:#fff;
+  display: flex;
+  padding: 0;
+  width: 40%;
+}
+main .boxes .post .text_field_post .text{
+  padding: 3%;
+  margin-top:20%;
+}
+
+main .boxes .post .text_field_post h2{
+  font-weight: normal;
+  font-size: 30px;
+}
+main .boxes .post img{
+  max-width: 100%;
+  width:50%;
+  height: 100%;
+}
+
+#blue{
+  background-color: #2d95bb;
+}
+main .boxes .post .text_field_post:hover{
+  opacity: 0.5;
+  cursor:pointer;
+}
+main .boxes .post img:hover{
+opacity: 0.5;
+cursor:pointer;
+}
+main .boxes #blue .text_field_post{
+width:100%;
+}
+main .boxes #blue .text_field_post .text{
+  margin:0;
+}
+
+
+main .aside{
+  min-width: 50px;
+  width:23%;
+}
+main .aside .aside_block{
+  background-color: #fff;
+  color:black;
+}
+main .aside .aside_block .text_field_aside{
+  padding: 5%;
+}
+main .aside .aside_block .text_field_aside p{
+  color:grey;;
+}
+main .aside .aside_block img{
+  max-width: 100%;
+  width: 100%;
+
+}
+
+
+/**********-footer-*******/
+footer{
+  display: flex;
+  justify-content: space-between;
+  background-color: #162b4d;
+  padding: 0 1% 0;
+  color:#4d6276;
+  padding: 2%;
+}
+/****************media******************/
+@media screen and (min-width:769px){
+  body header .humburger{
+    display: none;
+  }
+} 
+
+@media screen and (max-width:768px) and (min-width:481px){
+  body header{
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  body header .humburger div{
+    width: 35px;
+    height: 3px;
+    background-color: #fff;
+    margin: 6px 0;
+  }
+  body header .humburger{
+    width:fit-content;
+    padding-top:1%;
+  }
+  body header nav{
+    display:none;
+  }
+  body main .boxes .post{
+    align-items: center;
+  }
+  .boxes .post{
+    display: flex;
+    flex-direction: column;
+  }
+  main .boxes .post:nth-child(odd){
+  flex-direction:column;
+  }
+  main .boxes .post:nth-child(even){
+    flex-direction:column;
+    }
+  main .boxes .post img{
+    width:100%;
+  }
+  main .boxes .post .text_field_post{
+    width:80%;
+  }
+  main .boxes .post .text_field_post .text{
+    margin:0;
+  }
+  
+  footer{
+    flex-direction: column;
+    align-items: center;
+    text-align: center
+  }
+}
+@media screen and (max-width:480px){
+  body header{
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  body header .humburger div{
+    width: 35px;
+    height: 3px;
+    background-color: #fff;
+    margin: 6px 0;
+  }
+  body header .humburger{
+    width:fit-content;
+    padding-top:1%;
+  }
+  body header nav{
+    display:none;
+  }
+  body main .boxes .post{
+    align-items: center;
+  }
+  .boxes .post{
+    display: flex;
+    flex-direction: column;
+  }
+  main .boxes .post:nth-child(odd){
+  flex-direction:column;
+  }
+  main .boxes .post:nth-child(even){
+    flex-direction:column;
+    }
+  main .boxes .post img{
+    width:100%;
+  }
+  main .boxes .post .text_field_post{
+    width:80%;
+  }
+  main .boxes .post .text_field_post .text{
+    margin:0;
+  }
+  main .aside{
+    width:100%;
+  }
+  main .boxes{
+    width: 100%;
+  }
+  footer{
+    flex-direction: column;
+    align-items: center;
+    text-align: center
+  }
+}
+
+/****-colors-******/
+.post-1 {
+	background: #B71757;
+}
+.post-2 {
+	background: #0D7E71;
+}
+.post-3 {
+	background: #b1660e;
+}
+.post-4 {
+	background: #d12767;
+}
+.post-5 {
+	background: #2d95bb;
+}
+
+
