@@ -8,7 +8,6 @@ var prize=10;
 var attempts=3;
 while(start_prompt===true){
 var rand=Math.floor(Math.random() * (range_increment+1));
-alert("Random is: "+rand);
 user_number=prompt("Enter a number from 0 to "+range_increment+"\nAttempts left: "+attempts+"\nTotal prize: "
 +Math.floor(total_prize)+"\nPossible prize on current attempt: "+Math.floor(prize));
 if(Number(user_number)===rand){
